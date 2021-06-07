@@ -2,9 +2,10 @@ import React from "react";
 import { Row, Col, Button, Card, Divider, Collapse, Table } from "antd";
 import bank from "../assets/visa.jpg";
 import blue from "../assets/blue.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AppleOutlined, CaretRightOutlined } from "@ant-design/icons";
-// import Lines from "./components/Lines";
-// import { faApple } from "@fortawesome/free-brands-svg-icons";
+import Lines from "../components/Lines";
+import { faApple, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
 
 const Accounts = () => {
   // for christopher collapse
@@ -580,7 +581,7 @@ $6,396.32
                                 justifyContent: "space-between",
                               }}
                               type="primary"
-                              icon={<AppleOutlined />}
+                              icon={<FontAwesomeIcon icon={faApple} />}
                             >
                               <div
                                 style={{
@@ -599,7 +600,7 @@ $6,396.32
                           >
                             <Button
                               type="primary"
-                              icon={<CaretRightOutlined />}
+                              icon={<FontAwesomeIcon icon={faGooglePlay} />}
                               style={{
                                 width: "150px",
                                 height: 50,
@@ -663,8 +664,8 @@ $6,396.32
                       <a href="#">
                         <img
                           style={{
-                            width: 130,
-                            height: 130,
+                            width: 140,
+                            height: 180,
                             // paddingRight: 50,
                             paddingLeft: 10,
                             borderRadius: "50%",
@@ -742,7 +743,7 @@ $6,396.32
                   </div>
 
                   <Divider />
-                  {/* <Lines /> */}
+                  <Lines />
 
                   {/* chart goes here */}
                   <div style={{ fontSize: 16, color: "blue" }}>
