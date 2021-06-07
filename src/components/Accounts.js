@@ -581,15 +581,23 @@ $6,396.32
                                 justifyContent: "space-between",
                               }}
                               type="primary"
-                              icon={<FontAwesomeIcon icon={faApple} />}
+                              icon={
+                                <FontAwesomeIcon
+                                  icon={faApple}
+                                  style={{ fontSize: 30 }}
+                                />
+                              }
                             >
                               <div
                                 style={{
                                   display: "flex",
                                   flexDirection: "column",
+                                  height: 20,
                                 }}
                               >
-                                <span>Download on the</span>
+                                <span style={{ lineHeight: 0.5 }}>
+                                  Download on the
+                                </span>
                                 <span>App Store</span>
                               </div>
                             </Button>
@@ -600,7 +608,12 @@ $6,396.32
                           >
                             <Button
                               type="primary"
-                              icon={<FontAwesomeIcon icon={faGooglePlay} />}
+                              icon={
+                                <FontAwesomeIcon
+                                  icon={faGooglePlay}
+                                  style={{ fontSize: 25 }}
+                                />
+                              }
                               style={{
                                 width: "150px",
                                 height: 50,
@@ -620,9 +633,14 @@ $6,396.32
                                 style={{
                                   display: "flex",
                                   flexDirection: "column",
+                                  // justifyContent: "censter",
+                                  // border: "1px solid white",
+                                  height: 20,
                                 }}
                               >
-                                <span>GET IT ON</span>
+                                <span style={{ lineHeight: 0.5 }}>
+                                  GET IT ON
+                                </span>
                                 <span>GooglePlay</span>
                               </div>
                             </Button>
