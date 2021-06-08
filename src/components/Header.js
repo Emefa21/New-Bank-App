@@ -49,6 +49,7 @@ const Head = () => {
         flexDirection: "row",
         justifyContent: "space-between",
       }}
+      xs={24}
     >
       <div
         className="logo"
@@ -91,6 +92,7 @@ const Head = () => {
           onClick={() => {
             window.location.href = "#";
           }}
+          xs={24}
         >
           Conversations{" "}
         </Menu.Item>

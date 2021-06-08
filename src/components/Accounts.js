@@ -83,7 +83,12 @@ const Accounts = () => {
     <div>
       <div style={{ backgroundColor: "#f0f3f0", paddingTop: 70 }}>
         <Row>
-          <Col style={{ paddingRight: 20, paddingLeft: 20 }} span={14}>
+          <Col
+            style={{ paddingRight: 20, paddingLeft: 20 }}
+            md={14}
+            xs={24}
+            span={14}
+          >
             <div>
               {/*1 for accounts and transfer */}
               <div
@@ -665,9 +670,9 @@ $6,396.32
           </Col>
 
           {/* for right column for profile */}
-          <Col span={10}>
+          <Col span={10} md={10} xs={24}>
             <div style={{ paddingRight: 20, paddingLeft: 20 }}>
-              <Card style={{ width: "100" }}>
+              <Card style={{ width: "100", borderRadius: "2%" }}>
                 {/* div wrapping whole content */}
                 <div>
                   {/* div for profile pic n text beneath */}
@@ -761,6 +766,23 @@ $6,396.32
                   </div>
 
                   <Divider />
+                  <div>
+                    <div style={{ fontSize: 16 }}>
+                      <p>Expenses report</p>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <p style={{ fontWeight: "bold" }}>DAY</p>
+                      <p style={{ color: "gray" }}>WEEK</p>
+                      <p style={{ color: "gray" }}>MONTH</p>
+                      <p style={{ color: "gray" }}>YEAR</p>
+                    </div>
+                  </div>
                   <Lines />
 
                   {/* chart goes here */}
